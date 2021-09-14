@@ -1,16 +1,13 @@
-nav{
-    background-color: yellowgreen;
-    
-
+nav {
+  background-color: yellowgreen;
 }
 
+ul {
+  list-style: none;
+  color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 
-
-ul{
-    color: lightgrey;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  
-    padding: .65em;
+  padding: 0.65em;
 }
