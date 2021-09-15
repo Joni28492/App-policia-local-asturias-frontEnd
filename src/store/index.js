@@ -1,106 +1,84 @@
-const BloquesTemario = {
-  BloqueI: "Constitución",
-  BloqueII: "Cuerpos y Fuerzas de seguridad",
-  BloqueIII: "Tráfico",
-  BloqueIV: "Código Penal",
-};
+const BloquesTemario = [
+  "Constitución",
+  "Cuerpos y Fuerzas de seguridad",
+  "Tráfico",
+  "Código Penal",
+  "tests",
+];
+const BloqueI = [
+  "constitucion I",
+  "constitucion II",
+  "constitucion III",
+  "Estatuto de autonomia",
+  "-----------",
+  "Administracion I",
+  "Administracion II",
+  "--------",
+  "--------",
+  "Haciendas locales",
+  "constitucion",
+  "constitucion",
+];
+const BloqueII = ["", "", "", "", "", "", "", "", "", "", "", ""];
 
-const BloqueI = {
-  temaI: "constitucion I",
-  temaII: "constitucion II",
-  temaIII: "constitucion III",
-  temaIV: "Estatuto de autonomia",
-  temaV: "-----------",
-  temaVI: "Administracion I",
-  temaVII: "Administracion II",
-  temaVIII: "--------",
-  temaIX: "--------",
-  temaX: "Haciendas locales",
-  temaXI: "constitucion",
-  temaXII: "constitucion",
-};
-
-const BloqueII = {
-  temaI: "",
-  temaII: "",
-  temaIII: "",
-  temaIV: "",
-  temaV: "",
-  temaVI: "",
-  temaVII: "",
-  temaVIII: "",
-  temaIX: "",
-  temaX: "",
-  temaXI: "",
-  temaXII: "",
-};
-
-const BloqueIII = {
-  temaI: "",
-  temaII: "",
-  temaIII: "",
-  temaIV: "",
-  temaV: "",
-  temaVI: "",
-  temaVII: "",
-  temaVIII: "",
-  temaIX: "",
-  temaX: "",
-  temaXI: "",
-  temaXII: "",
-};
-
-const BloqueIV = {
-  temaI: "",
-  temaII: "",
-  temaIII: "",
-  temaIV: "",
-  temaV: "",
-  temaVI: "Delitos contra Salud publica",
-  temaVII: "Delitos contra la seguridad vial",
-  temaVIII: "",
-  temaIX: "",
-  temaX: "",
-  temaXI: "",
-  temaXII: "",
-};
-
-const paths = {
-  bloquesTemarioPaths: [
+const BloqueIII = ["", "", "", "", "", "", "", "", "", "", "", ""];
+const BloqueIV = [
+  "",
+  "",
+  "",
+  "",
+  "",
+  "Delitos contra Salud publica",
+  "Delitos contra la seguridad vial",
+  "",
+  "",
+  "",
+  "",
+  "",
+];
+const paths = [
+  [
     "/constitucion",
     "/cuerposfuerzasseguridad",
     "/trafico",
     "/codigopenal",
     "/tests",
   ],
-  constitucionPaths: [],
-  fuerzasPaths: [],
-  traficoPaths: [],
-  penalPaths: [],
-};
+  [],
+  [],
+  [],
+  [],
+];
 
-const icons = {
-  bloquesTemarioIcons: [
+const icons = [
+  [
     "fas fa-scroll",
     "fas fa-shield-alt",
     "fas fa-traffic-light",
     "fas fa-balance-scale-left",
     "fas fa-tasks",
   ],
-  constitucionIcons: [],
-  fuerzasIcons: [],
-  traficoIcons: [],
-  penalIcons: [],
-};
+  [],
+  [],
+  [],
+  [],
+];
 
-let store = {
-  bloques: BloquesTemario,
+let styleColorOrder = [
+  ["PaleGoldenrod", "dodgerblue", "ForestGreen", "Goldenrod", "tomato"],
+  [],
+  [],
+  [],
+  [],
+];
+let store = [
+  BloquesTemario,
   BloqueI,
   BloqueII,
   BloqueIII,
   BloqueIV,
   paths,
   icons,
-};
-
+  styleColorOrder,
+];
 export default store;

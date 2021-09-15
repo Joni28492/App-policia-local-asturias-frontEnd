@@ -1,44 +1,40 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../context/Context";
 import { Card } from "../Card";
 import "../styles/cards.css";
 
 export const HomeScreen = () => {
+  const [bloques, , , , , paths, icons, color] = useContext(Context);
+
   return (
     <>
       <div className='cards animate__animated  animate__bounceInDown'>
-        <Card
-          icon='fas fa-scroll'
-          title='Constitución'
-          path='/constitucion'
-          color='PaleGoldenrod'
-        />
-        <Card
-          icon='fas fa-shield-alt'
-          title='Cuerpos y Fuerzas de seguridad'
-          path='/cuerposfuerzasseguridad'
-          color='dodgerblue'
-        />
-        <Card
-          icon='fas fa-traffic-light'
-          title='Tráfico'
-          path='/trafico'
-          color='ForestGreen'
-        />
-        <Card
-          icon='fas fa-balance-scale-left'
-          title='Código Penal'
-          path='/codigopenal'
-          color='Goldenrod'
-        />
-        <Card
-          icon='fas fa-tasks'
-          title='Test'
-          path='/tests'
-          color='tomato'
-          width='90vw'
-          height='15vh'
-          iconSize='2rem'
-        />
+        {bloques.map(({}, idx) => {
+          if (idx == 4) {
+            return (
+              <Card
+                key={bloques[idx]}
+                icon={icons[0][idx]}
+                title={bloques[idx]}
+                path={paths[0][idx]}
+                color={color[0][idx]}
+                width='90vw'
+                height='15vh'
+                iconSize='2rem'
+              />
+            );
+          } else {
+            return (
+              <Card
+                key={bloques[idx]}
+                icon={icons[0][idx]}
+                title={bloques[idx]}
+                path={paths[0][idx]}
+                color={color[0][idx]}
+              />
+            );
+          }
+        })}
       </div>
     </>
   );
