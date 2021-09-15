@@ -4,13 +4,16 @@
 
 .login-box {
   margin: auto auto;
-  border: 3px solid tomato;
-  background-color: rgba(17, 114, 93, 0.4);
+  backdrop-filter: blur(16px) saturate(42%);
+  -webkit-backdrop-filter: blur(16px) saturate(42%);
+  background-color: rgba(168, 73, 148, 0.233);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
   width: 35vw;
   height: 65vh;
   border-radius: 15px;
   margin-top: 2.3rem;
-  box-shadow: 2px 2px 5px 1px rgba(204, 125, 69, 0.8);
+  box-shadow: 2px 2px 15px 1px rgba(78, 240, 178, 0.739);
 }
 .register-box {
   background-color: rgba(17, 114, 93, 0.4);

@@ -16,6 +16,10 @@
   background-color: rgba(134, 132, 127, 0.2);
 }
 
+.card:hover {
+  box-shadow: 4px 4px 25px rgba(39, 163, 111, 0.6);
+}
+
 i {
   margin: 0 auto;
   margin-top: 15px;

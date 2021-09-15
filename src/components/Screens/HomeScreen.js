@@ -5,7 +5,7 @@ import "../styles/cards.css";
 export const HomeScreen = () => {
   return (
     <>
-      <div className='cards'>
+      <div className='cards animate__animated  animate__bounceInDown'>
         <Card
           icon='fas fa-scroll'
           title='Constitución'
@@ -29,6 +29,15 @@ export const HomeScreen = () => {
           title='Código Penal'
           path='/codigopenal'
           color='Goldenrod'
+        />
+        <Card
+          icon='fas fa-tasks'
+          title='Test'
+          path='/tests'
+          color='tomato'
+          width='90vw'
+          height='15vh'
+          iconSize='2rem'
         />
       </div>
     </>

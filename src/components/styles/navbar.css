@@ -1,8 +1,9 @@
 nav {
-  background-color: yellowgreen;
+  background-color: rgb(56, 46, 87);
 }
 
 ul {
+  font-weight: bold;
   list-style: none;
   color: lightgrey;
   display: flex;

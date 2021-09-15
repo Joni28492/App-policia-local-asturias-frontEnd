@@ -11,12 +11,13 @@ import { CodigoPenalScreen } from "../components/Screens/CodigoPenalScreen";
 import { ConstitucionScreen } from "../components/Screens/ConstitucionScreen";
 import { CuerposFuerzasScreen } from "../components/Screens/CuerposFuerzasScreen";
 import { HomeScreen } from "../components/Screens/HomeScreen";
-import { LoginScreen } from "../components/Screens/LoginScreen";
+import { LoginScreen } from "../components/Screens/auth/LoginScreen";
+import { TestScreen } from "../components/Screens/tests.examen/TestScreen";
 import { TraficoScreen } from "../components/Screens/TraficoScreen";
 import "./styles/mainRoute.css";
+import { BlockRouteI } from "./BlockRouteI";
 
 export const MainRoute = () => {
-  //TODO:: eliminar las decoraciones de texto
   return (
     <Router>
       <div className='bg-glass'>
@@ -32,6 +33,9 @@ export const MainRoute = () => {
           />
           <Route path='/trafico' component={TraficoScreen} />
           <Route path='/codigopenal' component={CodigoPenalScreen} />
+          <Route path='/tests' component={TestScreen} />
+
+          <BlockRouteI />
 
           <Redirect to='/login' component={LoginScreen} />
         </Switch>
