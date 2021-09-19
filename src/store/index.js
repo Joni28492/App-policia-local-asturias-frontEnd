@@ -9,15 +9,15 @@ const BloqueI = [
   "constitucion I",
   "constitucion II",
   "constitucion III",
-  "Estatuto de autonomia",
-  "-----------",
-  "Administracion I",
-  "Administracion II",
-  "--------",
-  "--------",
+  "Estatuto de autonomía",
+  "La Administración local",
+  "El derecho administrativo y sus fuentes",
+  "El acto administrativo",
+  "Procedimiento administrativo comun",
+  "Personal al servicio de las corporaciones locales",
   "Haciendas locales",
-  "constitucion",
-  "constitucion",
+  "Historia de Asturias",
+  "Geografia de asturias",
 ];
 const BloqueII = ["", "", "", "", "", "", "", "", "", "", "", ""];
 
@@ -44,7 +44,20 @@ const paths = [
     "/codigopenal",
     "/tests",
   ],
-  [],
+  [
+    "/constitucionI",
+    "/constitucionII",
+    "/constitucionIII",
+    "/estatutoAutonomia",
+    "/adminLocal",
+    "/dchoAdminFuentes",
+    "/actoAdministrativo",
+    "/procedimientoAdminComun",
+    "/personalServicioCorpLocales",
+    "/haciendaslocales",
+    "/historiaAsturias",
+    "/geografiaAsturias",
+  ],
   [],
   [],
   [],
@@ -71,6 +84,7 @@ let styleColorOrder = [
   [],
   [],
 ];
+
 let store = [
   BloquesTemario,
   BloqueI,
@@ -81,4 +95,5 @@ let store = [
   icons,
   styleColorOrder,
 ];
+
 export default store;

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../../context/Context";
+// import { route } from "../../store";
 import { Card } from "../Card";
 import "../styles/cards.css";
 
@@ -9,8 +10,8 @@ export const HomeScreen = () => {
   return (
     <>
       <div className='cards animate__animated  animate__bounceInDown'>
-        {bloques.map(({}, idx) => {
-          if (idx == 4) {
+        {bloques.map((hola = "hola debo estar aqui o se rompera", idx) => {
+          if (idx === 4) {
             return (
               <Card
                 key={bloques[idx]}
