@@ -1,6 +1,7 @@
 import React from "react";
-import { cardDataBloqueI } from "../../store/data/cardsData";
+
 import { v4 as uuidv4 } from "uuid";
+import { cardDataBloques } from "../../store/data/cardsData";
 import { Card } from "../Card";
 import "../styles/cards.css";
 
@@ -8,7 +9,7 @@ export const HomeScreen = () => {
   return (
     <>
       <div className='cards animate__animated  animate__bounceInDown'>
-        {cardDataBloqueI.map(({ title, path, icon, color }) => {
+        {cardDataBloques.map(({ title, path, icon, color }) => {
           if (title === "Tests")
             return (
               <Card
