@@ -22,8 +22,8 @@ export const MainRoute = () => {
   const [, , , , , paths] = useContext(Context);
   // console.log(context);
   // console.log(paths);
-  const [pathsBloques, pathsBloqueI, pathsBloqueII] = paths;
-  console.log(pathsBloqueII);
+  const [pathsBloques, pathsBloqueI] = paths;
+  // console.log(pathsBloqueII);
 
   return (
     <Router>

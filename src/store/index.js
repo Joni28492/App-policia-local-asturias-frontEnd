@@ -1,10 +1,3 @@
-const BloquesTemario = [
-  "Constitución",
-  "Cuerpos y Fuerzas de seguridad",
-  "Tráfico",
-  "Código Penal",
-  "tests",
-];
 const BloqueI = [
   "constitucion I",
   "constitucion II",
@@ -86,7 +79,6 @@ let styleColorOrder = [
 ];
 
 let store = [
-  BloquesTemario,
   BloqueI,
   BloqueII,
   BloqueIII,

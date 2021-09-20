@@ -1,40 +1,36 @@
-import React, { useContext } from "react";
-import { Context } from "../../context/Context";
-// import { route } from "../../store";
+import React from "react";
+import { cardDataBloqueI } from "../../store/data/cardsData";
+import { v4 as uuidv4 } from "uuid";
 import { Card } from "../Card";
 import "../styles/cards.css";
 
 export const HomeScreen = () => {
-  const [bloques, , , , , paths, icons, color] = useContext(Context);
-
   return (
     <>
       <div className='cards animate__animated  animate__bounceInDown'>
-        {bloques.map((hola = "hola debo estar aqui o se rompera", idx) => {
-          if (idx === 4) {
+        {cardDataBloqueI.map(({ title, path, icon, color }) => {
+          if (title === "Tests")
             return (
               <Card
-                key={bloques[idx]}
-                icon={icons[0][idx]}
-                title={bloques[idx]}
-                path={paths[0][idx]}
-                color={color[0][idx]}
+                key={uuidv4()}
+                icon={icon}
+                title={title}
+                path={path}
+                color={color}
                 width='90vw'
                 height='15vh'
                 iconSize='2rem'
               />
             );
-          } else {
-            return (
-              <Card
-                key={bloques[idx]}
-                icon={icons[0][idx]}
-                title={bloques[idx]}
-                path={paths[0][idx]}
-                color={color[0][idx]}
-              />
-            );
-          }
+          return (
+            <Card
+              key={uuidv4()}
+              icon={icon}
+              title={title}
+              path={path}
+              color={color}
+            />
+          );
         })}
       </div>
     </>
