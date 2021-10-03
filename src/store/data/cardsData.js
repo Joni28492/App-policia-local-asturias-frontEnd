@@ -35,51 +35,51 @@ export const cardDataBloqueI = [
   {
     title: "Constitución I",
     path: "/constitucionI",
-    icon: "fas fa-scroll",
-    color: "red",
+    icon: "fas fa-crown",
+    color: "gold",
   },
 
   {
     title: "Constitución II",
     path: "/constitucionII",
-    icon: "fas fa-scroll",
-    color: "green",
+    icon: "fas fa-book-open",
+    color: "LightSteelBlue",
   },
   {
     title: "Constitución III",
     path: "/constitucionIII",
-    icon: "fas fa-scroll",
-    color: "PaleGoldenrod",
+    icon: "fas fa-bookmark",
+    color: "Peru",
   },
   {
     title: "Estatuto de autonomía",
     path: "/estatutoAutonomia",
-    icon: "fas fa-scroll",
-    color: "PaleGoldenrod",
+    icon: "fas fa-map-marked-alt",
+    color: "LightSlateGray",
   },
   {
     title: "La Administración local",
     path: "/adminLocal",
     icon: "fas fa-scroll",
-    color: "PaleGoldenrod",
+    color: "Coral",
   },
   {
     title: "El derecho administrativo y sus fuentes",
     path: "/dchoAdminFuentes",
-    icon: "fas fa-scroll",
-    color: "PaleGoldenrod",
+    icon: "fas fa-gavel",
+    color: "Moccasin",
   },
   {
     title: "El acto administrativo",
     path: "/actoAdministrativo",
-    icon: "fas fa-scroll",
-    color: "PaleGoldenrod",
+    icon: "fas fa-file-alt",
+    color: "SlateBlue",
   },
   {
     title: "Procedimiento administrativo comun",
     path: "/procedimientoAdminComun",
-    icon: "fas fa-scroll",
-    color: "PaleGoldenrod",
+    icon: "fas fa-envelope-open-text",
+    color: "MediumSpringGreen",
   },
   {
     title: "Personal al servicio de las corporaciones locales",
@@ -109,20 +109,75 @@ export const cardDataBloqueI = [
 
 export const cardDataBloqueII = [
   {
-    title: "",
-    path: "",
+    title: "L.O. 2/86, 13 Marzo Cuerpos y fuerzas de seguridad I",
+    path: "/ccffsI",
     icon: "fas fa-scroll",
     color: "PaleGoldenrod",
   },
   {
-    title: "",
-    path: "",
+    title: "L.O. 2/86, 13 Marzo Cuerpos y fuerzas de seguridad II",
+    path: "/ccffsII",
     icon: "fas fa-scroll",
     color: "PaleGoldenrod",
   },
   {
-    title: "",
-    path: "",
+    title: "L.O. 2/86, 13 Marzo Cuerpos y fuerzas de seguridad III",
+    path: "/ccffsIII",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "L.O. 2/86, 13 Marzo Cuerpos y fuerzas de seguridad IV",
+    path: "/ccffsIV",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "L.O. 4/2015, 30 Marzo,  Seguridad Ciudadna ",
+    path: "/segCiudadana",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "Protección Civil ",
+    path: "/Pcivil",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "Ley de coordinación de las policías locales",
+    path: "/leycoordinacion",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title:
+      "Ley del P.Asturias 8/2002, 21 octubre, espectaculos publicos y actividades recreativas",
+    path: "/lepar",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "Normativa autonomica",
+    path: "/autonomica",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "Colectivos de riesgo",
+    path: "/colectivosriesgo",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "reglamento de armas",
+    path: "/armas",
+    icon: "fas fa-scroll",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "Policia medioambiental",
+    path: "/medioambiental",
     icon: "fas fa-scroll",
     color: "PaleGoldenrod",
   },
@@ -152,6 +207,27 @@ export const cardDataBloqueIII = [
     title: "La circulación de vehiculos II",
     path: "/circulacionI",
     icon: "fas fa-car",
+    color: "PaleGoldenrod",
+  },
+];
+
+export const cardDataBloqueIV = [
+  {
+    title: "Penal I",
+    path: "",
+    icon: "fas fa-gavel",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "Penal II",
+    path: "",
+    icon: "fas fa-gavel",
+    color: "PaleGoldenrod",
+  },
+  {
+    title: "Penal III",
+    path: "",
+    icon: "fas fa-gavel",
     color: "PaleGoldenrod",
   },
 ];
