@@ -1,3 +1,16 @@
+import { ActoAdministrativoScreen } from "../../components/Screens/BloqueI/ActoAdministrativoScreen";
+import { AdminLocalScreen } from "../../components/Screens/BloqueI/AdminLocalScreen";
+import { ConstitucionIIIScreen } from "../../components/Screens/BloqueI/ConstitucionIIIScreen";
+import { ConstitucionIIScreen } from "../../components/Screens/BloqueI/ConstitucionIIScreen";
+import { ConstitucionIScreen } from "../../components/Screens/BloqueI/ConstitucionIScreen";
+import { DerechoAdministrativoFuentesScreen } from "../../components/Screens/BloqueI/DerechoAdministrativoFuentesScreen";
+import { EstatutoAutonomia } from "../../components/Screens/BloqueI/EstatutoAutonomia";
+import { GeografiaAsturiasScreen } from "../../components/Screens/BloqueI/GeografiaAsturiasScreen";
+import { HaciendasLocalesScreen } from "../../components/Screens/BloqueI/HaciendasLocalesScreen";
+import { HistoriaAsturiasScreen } from "../../components/Screens/BloqueI/HistoriaAsturiasScreen";
+import { PersonalServicioCorporacionesLocalesScreen } from "../../components/Screens/BloqueI/PersonalServicioCorporacionesLocalesScreen";
+import { ProcedimientoAdministrativoScreen } from "../../components/Screens/BloqueI/ProcedimientoAdministrativoScreen";
+
 export const cardDataBloques = [
   {
     title: "Constitución",
@@ -33,6 +46,9 @@ export const cardDataBloques = [
 
 export const cardDataBloqueI = [
   {
+    componentScreen: () => {
+      return <ConstitucionIScreen />;
+    },
     title: "Constitución I",
     path: "/constitucionI",
     icon: "fas fa-crown",
@@ -40,66 +56,99 @@ export const cardDataBloqueI = [
   },
 
   {
+    componentScreen: () => {
+      return <ConstitucionIIScreen />;
+    },
     title: "Constitución II",
     path: "/constitucionII",
     icon: "fas fa-book-open",
     color: "LightSteelBlue",
   },
   {
+    componentScreen: () => {
+      return <ConstitucionIIIScreen />;
+    },
     title: "Constitución III",
     path: "/constitucionIII",
     icon: "fas fa-bookmark",
     color: "Peru",
   },
   {
+    componentScreen: () => {
+      return <EstatutoAutonomia />;
+    },
     title: "Estatuto de autonomía",
     path: "/estatutoAutonomia",
     icon: "fas fa-map-marked-alt",
     color: "LightSlateGray",
   },
   {
+    componentScreen: () => {
+      return <AdminLocalScreen />;
+    },
     title: "La Administración local",
     path: "/adminLocal",
     icon: "fas fa-scroll",
     color: "Coral",
   },
   {
+    componentScreen: () => {
+      return <DerechoAdministrativoFuentesScreen />;
+    },
     title: "El derecho administrativo y sus fuentes",
     path: "/dchoAdminFuentes",
     icon: "fas fa-gavel",
     color: "Moccasin",
   },
   {
+    componentScreen: () => {
+      return <ActoAdministrativoScreen />;
+    },
     title: "El acto administrativo",
     path: "/actoAdministrativo",
     icon: "fas fa-file-alt",
     color: "SlateBlue",
   },
   {
+    componentScreen: () => {
+      return <ProcedimientoAdministrativoScreen />;
+    },
     title: "Procedimiento administrativo comun",
     path: "/procedimientoAdminComun",
     icon: "fas fa-envelope-open-text",
     color: "MediumSpringGreen",
   },
   {
+    componentScreen: () => {
+      return <PersonalServicioCorporacionesLocalesScreen />;
+    },
     title: "Personal al servicio de las corporaciones locales",
     path: "/personalServicioCorpLocales",
     icon: "fas fa-user-edit",
     color: "SpringGreen",
   },
   {
+    componentScreen: () => {
+      return <HaciendasLocalesScreen />;
+    },
     title: "Haciendas locales",
     path: "/haciendaslocales",
     icon: "fas fa-tractor",
     color: "olive",
   },
   {
+    componentScreen: () => {
+      return <HistoriaAsturiasScreen />;
+    },
     title: "Historia de Asturias",
     path: "/historiaAsturias",
     icon: "fas fa-history",
     color: "CadetBlue",
   },
   {
+    componentScreen: () => {
+      return <GeografiaAsturiasScreen />;
+    },
     title: "Geografia de asturias",
     path: "/geografiaAsturias",
     icon: "fas fa-mountain",

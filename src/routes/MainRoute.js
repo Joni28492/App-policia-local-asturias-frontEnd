@@ -56,8 +56,8 @@ export const MainRoute = () => {
           </Route>
           <Route exact path={BloquesPaths[4]} component={TestScreen} />
 
-          <BlockRouteI routes={BloqueIPaths} />
           {/* podemos generar las rutas de los otros bloques con el componbente BlockRouteI */}
+          <BlockRouteI routes={BloqueIPaths} />
           <BlockRouteII routes={BloqueIIPaths} />
 
           <Redirect to='/login' component={LoginScreen} />
